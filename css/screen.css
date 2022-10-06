@@ -1336,7 +1336,15 @@ more padding on the right to avoid overlap
     transition: transform .5s cubic-bezier(0.175, 0.885, 0.32, 2.275);
     will-change: transform;
 }
-
+.c-like__label{
+    width: 24px;
+    height: 24px;
+}
+.c-like__input:focus+.c-like__label {
+    outline: #D80027 solid 2px;
+    outline-offset: 5px;
+    border-radius: 100%;
+}
 .c-like__input:checked+.c-like__label .c-like__symbol {
     transform: scale(1.1);
     fill: #D80027;
